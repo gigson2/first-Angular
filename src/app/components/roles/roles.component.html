@@ -1,0 +1,47 @@
+<p>roles works!</p>
+<!-- this is defined as interpolation -->
+<p>{{ firstName }}</p>
+<section class="row mx-auto">
+
+  <div class="col-4">
+    <p>String results: {{ version }}</p>
+  </div>
+  <div class="col-4">
+
+    <p>Number results: {{ newVersion }}</p>
+  </div>
+  <div class="col-4">
+    <p>{{ isActive }}</p>
+  </div>
+</section>
+
+<section class="row mx-auto col-xl-10">
+
+  <div class="col-4">
+    <label for=""><p>{{ currentDate }}</p></label>
+    <!-- property bindings -->
+    <input type="text" [value]="firstName" class="form-control">
+  </div>
+
+  <div class="col-4">
+    <input [type]="inputType3" class="form-control">
+
+    <input [type]="inputType2" class="form-control">
+  </div>
+</section>
+
+<!-- data bindings -->
+<section class="row">
+  <div class="col-4">
+    <input type="text" [(ngModel)]="firstName" class="form-control">
+  </div>
+  <div class="col-2">{{ selectState }}</div>
+
+  <div class="col-4">
+    <select [(ngModel)]="selectState" name="" id="">
+      <option value="school">school</option>
+      <option value="work">work</option>
+      <option value="disco">disco</option>
+    </select>
+  </div>
+</section>
