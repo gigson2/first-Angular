@@ -1,0 +1,17 @@
+<div class="text-center">
+<div class="btn-group">
+  <!-- ngClass is a property binding and ngClass is a class binding -->
+  <button type="button" (click)="changeTab('Roles')" class="btn " [ngClass]="currentComponent == 'Roles' ? 'btn-primary' : 'btn-secondary'">Roles</button>
+  <button type="button" (click)="changeTab('Designation')" class="btn " [ngClass]="currentComponent == 'Designation' ? 'btn-primary' : 'btn-secondary'">Designation</button>
+</div>
+<section class="row m-5">
+<!-- Directives - *ngIf and *ngFor are structural directives -->
+  <div class="col-4" *ngIf="currentComponent == 'Roles'">
+    <app-roles></app-roles>
+  </div>
+
+  <div class="col-4" *ngIf="currentComponent == 'Designation'">
+    <app-designation></app-designation>
+  </div>
+</section>
+</div>

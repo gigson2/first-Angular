@@ -1,6 +1,6 @@
-<p>roles works!</p>
-<!-- this is defined as interpolation -->
-<p>{{ firstName }}</p>
+ <!-- <p>roles works!</p> -->
+<!-- this is defined as interpolation, interpolation displays the value of a variable-->
+<!-- <p>{{ firstName }}</p>
 <section class="row mx-auto">
 
   <div class="col-4">
@@ -15,27 +15,29 @@
   </div>
 </section>
 
-<section class="row mx-auto col-xl-10">
+<section class="row mx-auto col-xl-10"> -->
 
-  <div class="col-4">
-    <label for=""><p>{{ currentDate }}</p></label>
-    <!-- property bindings -->
-    <input type="text" [value]="firstName" class="form-control">
+  <!-- <div class="col-4">
+    <label for=""><p>{{ currentDate }}</p></label> -->
+    <!-- property bindings this is used to display the value of a variable-->
+    <!-- <input type="text" [value]="firstName" class="form-control">
   </div>
 
-  <div class="col-4">
-    <input [type]="inputType3" class="form-control">
+  <div class="col-4"> -->
+    <!-- attribute bindings this is used to determine the type of input -->
+    <!-- <input [type]="inputType3" class="form-control">
 
     <input [type]="inputType2" class="form-control">
   </div>
-</section>
+  <div class="col-2">{{ selectState }}</div>
+</section> -->
 
 <!-- data bindings -->
-<section class="row">
-  <div class="col-4">
-    <input type="text" [(ngModel)]="firstName" class="form-control">
+<!-- <section class="row m-5">
+  <div class="col-4"> -->
+    <!-- two way data binding using ngModel -->
+    <!-- <input type="text" [(ngModel)]="firstName" class="form-control">
   </div>
-  <div class="col-2">{{ selectState }}</div>
 
   <div class="col-4">
     <select [(ngModel)]="selectState" name="" id="">
@@ -43,5 +45,18 @@
       <option value="work">work</option>
       <option value="disco">disco</option>
     </select>
+  </div> -->
+<!-- event binding without parameters -->
+  <!-- <div class="col-4">
+    <button class="btn btn-primary" (click)="showWelcomeMessage()">Show Message</button>
   </div>
+
 </section>
+
+<section class="row m-5"> -->
+  <!-- event binding with parameters -->
+  <!-- <div class="col-3">
+    <button class="btn btn-warning" (click)="showMessage('clicked')">Display clicked message</button>
+  </div>
+</section> -->
+
